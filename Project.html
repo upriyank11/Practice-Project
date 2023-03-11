@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Index</title>
-    <!-- bootstrap css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- External css -->
-    <link rel="stylesheet" href="Style.css" />
-  </head>
-  <body>
-    <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong>GIPHY</strong> Search API</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Search</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
-            </li><li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Index</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- External css -->
+  <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><strong>GIPHY</strong> Search API</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
       </div>
-    </nav>
-    <!-- Main Body -->
-   <section class="GIF bg-dark bg-gradient">
+    </div>
+  </nav>
+  <!-- Main Body -->
+  <!-- <section class="GIF bg-dark bg-gradient">
     <form class="gif Search">
     <div class="container-fluid ">
       <div class="row">
@@ -68,9 +58,24 @@
      </div>
      <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
   </form>
-    </section>
+    </section> -->
 
-   <!-- Javascript -->
-    <script src="Main.js"></script>
-  </body>
+
+    <div class="flex-fill justify-content-around p-2">
+      <div onclick="showTable()" type="button" class="btn btn-primary">click to show students array</div>
+      <div onclick="addToTable()" type="button" class="btn btn-primary">click to add a new student to student array</div>      
+    </div>
+    <div id="smallform" class="flex-fill justify-content-around p-2">
+      <input id="firstname" type="text" placeholder="first name">
+      <input id="lastname" type="text" placeholder="last name">
+      <input id="age" type="number" placeholder="age">
+      
+    </div>
+    <div id="savebtn"  onclick="save()" type="button" class="btn btn-primary disabled">click to save</div>
+  <div id="mylist"></div>
+
+  <!-- Javascript -->
+  <script src="Main.js"></script>
+</body>
+
 </html>
